@@ -80,14 +80,6 @@ class MyHomePage extends StatelessWidget {
                           color: tabBarIcon,
                           fontWeight: FontWeight.bold,
                           fontSize: 20.0)),
-                  Text(
-                    '90',
-                    style: TextStyle(
-                        backgroundColor: blackColor,
-                        color: tabBarIcon,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 10.0),
-                  ),
                 ],
               ),
             ),
@@ -113,10 +105,18 @@ class MyHomePage extends StatelessWidget {
         ),
         body: const TabBarView(children: [
           Tab(text: 'communities'),
-          ChatsTab(),
+          HomePage(),
           Updates(),
           Tab(text: 'calls'),
         ]),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(
+            Icons.message_sharp,
+            color: appIcon,
+          ),
+          backgroundColor: appBarColor,
+        ),
       ),
     );
   }
