@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/WhatsappCalls/call_item.dart';
+import 'package:whatsapp_clone/WhatsappCalls/whatsapp_calls.dart';
 import 'package:whatsapp_clone/colors.dart';
 import 'package:whatsapp_clone/whatsappChats/whatsapp_chats.dart';
 import 'package:whatsapp_clone/whatsappUpdates/whatsapp_updates.dart';
@@ -103,11 +105,12 @@ class MyHomePage extends StatelessWidget {
             ),
           ]),
         ),
-        body: const TabBarView(children: [
-          Tab(text: 'communities'),
-          HomePage(),
-          Updates(),
-          Tab(text: 'calls'),
+        body: TabBarView(children: [
+          const Tab(
+              text: 'Sorry This feature is not available in your country'),
+          const HomePage(),
+          const Updates(),
+          WhatsappCalls(callList: callList),
         ]),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},

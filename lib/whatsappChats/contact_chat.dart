@@ -39,7 +39,7 @@ const info = [
     'name': 'Albert Dera',
     'message': 'Am I fat?',
     'time': '7:25 am',
-    'profilePic': '6.jpg'
+    'profilePic': '6.jpeg'
   },
   {
     'name': 'Joseph',
